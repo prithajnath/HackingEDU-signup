@@ -5,8 +5,8 @@ font-family: 'Kreon', serif;
 
 }
 
+
 input{
-
-background: none;
-
+    outline: none;
+    background-color: transparent;
 }

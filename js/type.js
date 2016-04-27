@@ -1,7 +1,13 @@
-$('#firstname').hide();
+$('.signup').hide();
 $('#start').click(function(event){
 
 $('#welcome').hide();
-$('#firstname').fadeIn();
+$('.signup').fadeIn();
 
+});
+
+$("body").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#start").click();
+    }
 });
