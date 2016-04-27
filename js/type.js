@@ -12,17 +12,10 @@ $("body").keyup(function(event){
     }
 });
 
-if($('#fname').val()){
+$('#fnsub').click(function(event){
 
-$("#fname").keyup(function(event){
+$('body').scrollTop(960);
+//console.log("click detected");
 
-if(event.keyCode == 13){
-
-    console.log("IT WORKS");
-
-
-}
 
 });
-    
-}
