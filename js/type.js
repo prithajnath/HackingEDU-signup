@@ -11,3 +11,18 @@ $("body").keyup(function(event){
         $("#start").click();
     }
 });
+
+if($('#fname').val()){
+
+$("#fname").keyup(function(event){
+
+if(event.keyCode == 13){
+
+    console.log("IT WORKS");
+
+
+}
+
+});
+    
+}
