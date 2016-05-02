@@ -14,7 +14,8 @@ $("body").keyup(function(event){
 
 $('#fnsub').click(function(event){
 
-$('body').scrollTop(960);
+$("html, body").animate({ scrollTop: "900px" });
+//$('body').scrollTop(960);
 //console.log("click detected");
 
 
