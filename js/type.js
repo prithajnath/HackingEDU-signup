@@ -1,3 +1,6 @@
+//scrollTop variable
+var scroll = 900;
+
 $('.signup').hide();
 $('#start').click(function(event){
 
@@ -6,17 +9,20 @@ $('.signup').fadeIn();
 
 });
 
-$("body").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#start").click();
-    }
-});
+$('.fnsub').click(function(event){
 
-$('#fnsub').click(function(event){
-
-$("html, body").animate({ scrollTop: "900px" });
+$("html, body").animate({ scrollTop: scroll.toString() + "px" });
+scroll += 900;
 //$('body').scrollTop(960);
 //console.log("click detected");
 
 
+});
+
+$("body").keyup(function(event){
+    if(event.keyCode == 13){
+      if($('#welcome').css('display','block')){
+        $("#start").click();
+      }
+    }
 });
